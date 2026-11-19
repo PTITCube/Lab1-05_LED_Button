@@ -23,7 +23,7 @@ void loop() {
     if (lastButtonState == HIGH && buttonState == LOW) {
         ledState = !ledState;
         digitalWrite(LED_PIN, ledState);
-        Serial.println(ledState == HIGH ? "[LED] ON" : "[LED] OFF");
+        Serial.println(ledState == HIGH ? "LED: ON" : "LED: OFF");
         delay(200); // Debounce
     }
 
